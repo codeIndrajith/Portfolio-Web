@@ -11,6 +11,21 @@
     list-style: none;
     gap: 60px;
     font-size: 20px;
+    cursor: pointer;
+}
+
+.underline {
+    text-decoration: underline;
+    background: linear-gradient(135deg, orange 60%, cyan);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+    transform: scale(1.18);
+}
+
+.noUnderline {
+    text-decoration: none;
 }
 
 .nav-connect {
