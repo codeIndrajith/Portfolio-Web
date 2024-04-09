@@ -7,7 +7,7 @@ import mail_icon from '../../assets/mail_icon.svg';
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <div className="contact-title">
         <h1>Get in touch</h1>
         <img src={theme_pattern} alt="theme_pattern" />

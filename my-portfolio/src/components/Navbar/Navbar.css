@@ -14,6 +14,31 @@
     cursor: pointer;
 }
 
+.nav-menu li {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+
+
+.nav-menu li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background: linear-gradient(135deg, orange 60%, cyan);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.nav-menu li:hover::after,
+.nav-menu li:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
 .underline {
     text-decoration: underline;
     background: linear-gradient(135deg, orange 60%, cyan);
@@ -36,6 +61,11 @@
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
 }
 
 .nav-connect:hover {
