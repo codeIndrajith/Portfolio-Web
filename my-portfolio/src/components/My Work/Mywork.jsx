@@ -3,6 +3,7 @@ import './Mywork.css';
 import theme_pattern from '../../assets/react.svg';
 import arrow_icon from '../../assets/arrow_icon.svg';
 import myWorks from '../../data/myWork';
+import GoToHomePage from '../GoToHomePage/GoToHomePage';
 
 const Mywork = () => {
   return (
@@ -27,6 +28,7 @@ const Mywork = () => {
         <p>Show More</p>
         <img src={arrow_icon} alt="" />
       </div>
+      <GoToHomePage />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import theme_pattern from '../../assets/react.svg';
 import location_icon from '../../assets/location_icon.svg';
 import call_icon from '../../assets/call_icon.svg';
 import mail_icon from '../../assets/mail_icon.svg';
+import GoToHomePage from '../GoToHomePage/GoToHomePage';
 
 const PUBLIC_ACCESS_KEY = import.meta.env.VITE_PUBLIC_ACCESS_KEY;
 
@@ -100,6 +101,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      <GoToHomePage />
     </div>
   );
 };

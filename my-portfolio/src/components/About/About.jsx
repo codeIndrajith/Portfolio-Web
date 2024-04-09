@@ -2,6 +2,7 @@ import React from 'react';
 import './About.css';
 import theme_pattern from '../../assets/react.svg';
 import profileImage from '../../assets/react.svg';
+import GoToHomePage from '../GoToHomePage/GoToHomePage';
 
 const About = () => {
   return (
@@ -57,6 +58,7 @@ const About = () => {
           <p>HAPPY CLIENTS</p>
         </div>
       </div>
+      <GoToHomePage />
     </div>
   );
 };

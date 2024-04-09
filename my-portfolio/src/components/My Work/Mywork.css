@@ -101,7 +101,7 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .mywork-container {
         grid-template-columns: 1fr 1fr;
     }
@@ -127,5 +127,11 @@
         font-size: 18px;
         margin: 50px auto;
         cursor: pointer;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+    .mywork-container {
+        grid-template-columns: 1fr 1fr;
     }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import footer_logo from '../../assets/react.svg';
 import user_icon from '../../assets/user_icon.svg';
+import GoToHomePage from '../GoToHomePage/GoToHomePage';
 
 const Footer = () => {
   return (
@@ -30,6 +31,7 @@ const Footer = () => {
           <p>Connect with me</p>
         </div>
       </div>
+      <GoToHomePage />
     </div>
   );
 };

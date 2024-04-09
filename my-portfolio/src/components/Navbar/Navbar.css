@@ -82,7 +82,7 @@
 
 /* Responsive section */
 
-@media(max-width: 769px) {
+@media(max-width: 1300px) {
     .navbar {
         margin: 20px 50px;
     }

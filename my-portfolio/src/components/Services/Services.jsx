@@ -3,6 +3,7 @@ import './Services.css';
 import theme_pattern from '../../assets/react.svg';
 import arrow_icon from '../../assets/arrow_icon.svg';
 import servicesData from '../../data/services_data';
+import GoToHomePage from '../GoToHomePage/GoToHomePage';
 
 const Services = () => {
   return (
@@ -26,6 +27,7 @@ const Services = () => {
           );
         })}
       </div>
+      <GoToHomePage />
     </div>
   );
 };
