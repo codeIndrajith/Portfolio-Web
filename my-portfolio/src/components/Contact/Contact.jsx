@@ -21,20 +21,25 @@ const Contact = () => {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: json,
-    }).then((res) => res.json());
+    if (name !== '' && email !== '' && message !== '') {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: json,
+      }).then((res) => res.json());
 
-    if (res.success) {
-      console.log('Success', res);
-      setUserName('');
-      setEmail('');
-      setMessage('');
+      if (res.success) {
+        alert(res.message);
+
+        setUserName('');
+        setEmail('');
+        setMessage('');
+      }
+    } else {
+      alert('Please fill all the form filed');
     }
   };
 
