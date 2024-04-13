@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import profileImage from '../../assets/react.svg';
+import profileImage from '../../assets/profileImage2.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Hero = () => {
@@ -8,9 +8,10 @@ const Hero = () => {
     <div id="home" className="hero">
       <img src={profileImage} alt="My image" />
       <h1>
-        <span>I'm Indrajith Bodhinayaka</span>, Software Engineer
+        Hi, <span>I'm Indrajith Bodhinayaka</span>, A Full Stack Developer From
+        Sri Lanka
       </h1>
-      <p>I have a experience 3 years to Fullstack development</p>
+      <p>I have 3 years of experience in Full Stack Development.</p>
       <div className="hero-action">
         <div className="hero-connect">
           <AnchorLink
@@ -21,7 +22,11 @@ const Hero = () => {
             Connect With Me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My resume</div>
+        <div className="hero-resume">
+          <a href="https://drive.google.com/file/d/171GfWEKiZPVBHnRat7IDMmGUVkRUEoat/view?usp=drive_link">
+            My resume
+          </a>
+        </div>
       </div>
     </div>
   );

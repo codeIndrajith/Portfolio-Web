@@ -26,7 +26,7 @@
 
 .services-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin-bottom: 80px;
 }
@@ -36,7 +36,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding: 60px;
+    padding: 45px;
     border-radius: 10px;
     border: 2px solid #fff;
     transition: 0.4s;
@@ -59,8 +59,8 @@
 
 .services-format p {
     color: #d4d4d4;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 19px;
+    line-height: 30px;
     max-width: 300px;
 }
 
@@ -124,7 +124,7 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .services-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .services-title h1 {

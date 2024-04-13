@@ -1,15 +1,14 @@
 import React from 'react';
 import './About.css';
-import theme_pattern from '../../assets/react.svg';
-import profileImage from '../../assets/react.svg';
-import GoToHomePage from '../GoToHomePage/GoToHomePage';
+// import theme_pattern from '../../assets/theme_pattern.svg';
+import profileImage from '../../assets/profileImage2.png';
 
 const About = () => {
   return (
     <div id="about" className="about">
       <div className="about-title">
         <h1>About me</h1>
-        <img src={theme_pattern} alt="theme pattern" />
+        {/* <img src={theme_pattern} alt="theme pattern" /> */}
       </div>
       <div className="about-section">
         <div className="about-left">
@@ -17,8 +16,14 @@ const About = () => {
         </div>
         <div className="about-right">
           <div className="about-para">
-            <p>I am experienced Full stack Developer with over 3 years</p>
-            <p>Coding is my passion</p>
+            <p>
+              I'm a skilled Full Stack Developer with over 3 years of
+              experience.
+            </p>
+            <span>Coding is my passion</span>
+            <p className="skill-para">
+              I have a more Skills for Full Stack Development.
+            </p>
           </div>
           <div className="about-skills">
             <div className="about-skill">
@@ -50,15 +55,14 @@ const About = () => {
         <hr />
         <div className="about-achievement">
           <h1>10+</h1>
-          <p>PROJECTs COMPLETED</p>
+          <p>PROJECTS COMPLETED</p>
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>15+</h1>
+          <h1>10+</h1>
           <p>HAPPY CLIENTS</p>
         </div>
       </div>
-      <GoToHomePage />
     </div>
   );
 };

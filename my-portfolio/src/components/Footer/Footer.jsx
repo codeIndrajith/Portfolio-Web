@@ -7,7 +7,7 @@ import GoToHomePage from '../GoToHomePage/GoToHomePage';
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer-top">
+      {/* <div className="footer-top">
         <div className="footer-top-left">
           <img src={footer_logo} alt="" />
           <p>I am Fullstack Developer</p>
@@ -19,17 +19,24 @@ const Footer = () => {
           </div>
           <div className="footer-subscribe">Subscribe</div>
         </div>
-      </div>
-      <hr />
+      </div> */}
       <div className="footer-bottom">
+        <hr />
         <p className="footer-bottom-left">
-          2024 Indrajith Bodhinayaka. All right received
+          Copyright &copy; 2024 {''}
+          <a
+            className="copyright-section"
+            href="https://www.linkedin.com/in/indrajith-bodhinayaka-b5a10521b/"
+          >
+            Indrajith Bodhinayaka
+          </a>{' '}
+          {''}. All Rights Reserved
         </p>
-        <div className="footer-bottom-right">
+        {/* <div className="footer-bottom-right">
           <p>Term of Services</p>
           <p>Privacy Policy</p>
           <p>Connect with me</p>
-        </div>
+        </div> */}
       </div>
       <GoToHomePage />
     </div>

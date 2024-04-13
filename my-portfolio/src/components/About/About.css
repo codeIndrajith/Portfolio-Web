@@ -43,6 +43,18 @@
     font-weight: 500;
 }
 
+.about-para span {
+    color: rgb(255, 153, 0);
+}
+
+.skill-para{
+    margin-bottom: -35px;
+    color: rgba(172, 172, 166, 0.911);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-skills {
     display: flex;
     flex-direction: column;
@@ -112,7 +124,7 @@
     .about {
         gap: 80px;
         margin: 90px;
-        align-items: start;
+        align-items: center;
     }
     
     .about-title h1 {
@@ -125,15 +137,22 @@
         right: -20px;
     }
 
-    .about-sections {
+    .about-section {
         flex-direction: column;
     }
 
     .about-left {
-        display: none;
+        margin-top: -40px;
+        align-items: center;
+    }
+
+    .about-left img {
+        width: 400px;
+        height: 400px;
     }
 
     .about-para {
+        margin-top: -70px;
         font-size: 18px;
         line-height: 32px;
     }
@@ -171,6 +190,44 @@
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-left {
+        margin-top: -40px;
+        align-items: center;
+    }
+
+    .about-left img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .about-right {
+        width: 120%;
+    }
+
+    .about-para {
+        margin-top: -70px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .about-skill {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .about-skill p {
+        font-size: 20px;
+    }
+
+    .about-skill hr {
+        height: 6px;
+    }
+
     .about-title h1 {
         font-size: 50px;
         padding: 0;

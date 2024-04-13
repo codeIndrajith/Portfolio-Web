@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import theme_pattern from '../../assets/react.svg';
+// import theme_pattern from '../../assets/react.svg';
 import location_icon from '../../assets/location_icon.svg';
 import call_icon from '../../assets/call_icon.svg';
 import mail_icon from '../../assets/mail_icon.svg';
-import GoToHomePage from '../GoToHomePage/GoToHomePage';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const PUBLIC_ACCESS_KEY = import.meta.env.VITE_PUBLIC_ACCESS_KEY;
 
@@ -33,14 +34,16 @@ const Contact = () => {
       }).then((res) => res.json());
 
       if (res.success) {
-        alert(res.message);
+        toast.success('Form submitted successfully!');
 
         setUserName('');
         setEmail('');
         setMessage('');
+      } else {
+        toast.error('Form submission failed. Please try again later.');
       }
     } else {
-      alert('Please fill all the form filed');
+      toast.error('Please fill all fields');
     }
   };
 
@@ -48,12 +51,12 @@ const Contact = () => {
     <div id="contact" className="contact">
       <div className="contact-title">
         <h1>Get in touch</h1>
-        <img src={theme_pattern} alt="theme_pattern" />
+        {/* <img src={theme_pattern} alt="theme_pattern" /> */}
       </div>
       <div className="contact-section">
         <div className="contact-left">
           <h1>Let's talk</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Feel free to reach out to us for any inquiries or assistance.</p>
           <div className="contact-details">
             <div className="contact-detail">
               <img src={mail_icon} alt="" />{' '}
@@ -99,9 +102,9 @@ const Contact = () => {
           <button type="submit" className="contact-submit">
             Submit now
           </button>
+          <ToastContainer />
         </form>
       </div>
-      <GoToHomePage />
     </div>
   );
 };

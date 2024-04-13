@@ -5,6 +5,11 @@
     margin: 20px 170px;
 }
 
+.logo {
+   width: 60px;
+  }
+  
+
 .nav-menu {
     display: flex;
     align-items: center;
