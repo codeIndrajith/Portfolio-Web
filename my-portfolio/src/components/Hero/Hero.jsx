@@ -2,6 +2,7 @@ import React from 'react';
 import './Hero.css';
 import profileImage from '../../assets/profileImage2.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+const resumeLink = import.meta.env.VITE_RESUME_LINK;
 
 const Hero = () => {
   return (
@@ -23,9 +24,7 @@ const Hero = () => {
           </AnchorLink>
         </div>
         <div className="hero-resume">
-          <a href="https://drive.google.com/file/d/171GfWEKiZPVBHnRat7IDMmGUVkRUEoat/view?usp=drive_link">
-            My resume
-          </a>
+          <a href={resumeLink}>My resume</a>
         </div>
       </div>
     </div>
