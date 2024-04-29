@@ -2,7 +2,8 @@ import React from 'react';
 import './Hero.css';
 import profileImage from '../../assets/profileImage2.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-const resumeLink = import.meta.env.VITE_RESUME_LINK;
+const resumeLink =
+  'https://drive.google.com/file/d/1ObW2Vm9pZlCQShYp3jHz6JW0wBdepcms/view?usp=drive_link';
 
 const Hero = () => {
   return (
